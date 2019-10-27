@@ -1,0 +1,22 @@
+<body class="text-center">
+        <form class="form-signin" (ngSubmit)="agregar()" [formGroup]="formRegistro">
+            <img class="mb-2" src="http://cundech.usac.edu.gt/wp-content/uploads/2014/05/cropped-logo-usac.png" alt="" width="150" height="150">
+      
+          <h1 class="display-4">Registro</h1>
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+                <input type="text" class="form-control" formControlName="correo" placeholder="Correo">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" formControlName="contrasena"  placeholder="Contraseña">
+          </div>
+          <div class="form-group">
+                <input type="password" class="form-control" formControlName="tipo"  placeholder="Tipo">
+          </div>
+          <button class="btn-lg btn-block btn btn-dark" type="submit">Registrar</button>
+          <button class="btn-lg btn-block btn btn-dark" type="button" (click)="regresar()">Regresar</button>
+          <!--por que ya no se podria con el submit pera que piense :'v-->
+        </form>
+</body>

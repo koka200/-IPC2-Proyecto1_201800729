@@ -1,0 +1,30 @@
+<!--<form [formGroup]="formLogin" class="text-center" name="formLogin" (ngSubmit)="login()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Carne </label>
+      <input type="email" class="form-control" formControlName="correo" aria-describedby="emailHelp" placeholder="ID">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Contrasena</label>
+      <input type="password" class="form-control" formControlName="contrasena" placeholder="Contrasena">
+    </div>
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+</form>
+Holi :vjaja que onda
+contame
+pues fijate que no si genere bien los sevicios, primero-->
+<body class="text-center">
+  <form class="form-signin" (ngSubmit)="login()" [formGroup]="formLogin">
+      <img class="mb-2" src="http://cundech.usac.edu.gt/wp-content/uploads/2014/05/cropped-logo-usac.png" alt="" width="150" height="150">
+
+    <h1 class="display-4">Iniciar Sesión</h1>
+    <div class="form-group">
+      <input type="text" class="form-control" formControlName="correo" placeholder="Nombre de Usuario">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" formControlName="contrasena"  placeholder="Contraseña">
+    </div>
+    <button class="btn-lg btn-block btn btn-dark" type="submit">Iniciar Sesión</button>
+    <button class="btn-lg btn-block btn btn-dark" type="button" (click)="registrar()">Registrarse</button>
+    <!--por que ya no se podria con el submit pera que piense :'v-->
+  </form>
+</body>

@@ -1,0 +1,20 @@
+<h1>Cursos</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Codigo</th>
+      <th scope="col">estado</th>
+    </tr>
+  </thead>
+  <tbody>
+      <!--ASI SE HACE UN FOR EN ANGULAR-->
+    <tr *ngFor="let x of data">
+      <th scope="row">{{x.idCurso}}</th>
+      <td>{{x.nombre}}</td>
+      <td>{{x.codigo}}</td>
+      <td>{{x.estado}}</td>
+    </tr>
+  </tbody>
+</table>
